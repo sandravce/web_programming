@@ -1,0 +1,52 @@
+<html>
+<body>
+
+<!-- Demonstration of image-->
+
+<h1>Linking images using img tag</h1>
+<a href="https://en.wikipedia.org/wiki/Flower"><img src="flower.jpg" alt="Pink Rose" width="200" height="200"></a>
+
+<!-- Demonstrationof hyperlink -->
+
+<h1>To define hyperlinks</h1>
+<a href="https://www.netflix.com/in/title/81450284"> NETFLIX</a>
+
+<!-- Demonstration of Table -->
+
+<h2>Horizontal headers:</h2>
+<table border="1" bordercolor="green" bgcolor="cyan">
+	
+	<tr>
+	<th>Name</th>
+	<th>Email</th>
+	<th>Phone</th>
+	</tr>
+	
+	 <tr>
+	 <td>Sandra</td>
+	 <td>sandra@example.com</td>
+	 <td>1234567890</td>
+	 </tr>
+	</table>
+	
+	
+		<h2>Vertical headers:</h2>
+		
+		<table border="1" width="150" height="150" bordercolor="blue" bgcolor="yellow" >
+		 <tr>
+		 <th>Name:</th>
+		 <td>Sandra</td>
+		 </tr>
+		 
+		 <tr>
+		 <th>Email:</th>
+		 <td>sandra@example.com</td> 
+		  </tr>
+		  
+		 <tr>
+		 <th>Phone:</th>
+		 <td>1234567890</td>
+		 </tr>
+</table>
+</body>
+</html>
