@@ -1,0 +1,70 @@
+/* General styles */
+h1 {
+    color: purple;
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    color: #825991;
+    font-size: 25px;
+}
+
+h3 {
+    color: red;
+}
+
+h4 {
+    color: maroon;
+}
+
+/* Ordered list styles */
+ol li:nth-child(1) {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: teal;
+}
+
+ol li:nth-child(2) {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    color: darkgreen;
+}
+
+/* Unordered list styles */
+ul li:nth-child(1) {
+    font-family: 'Comic Sans MS', cursive;
+    font-style: oblique;
+    color: orchid;
+}
+
+ul li:nth-child(2) {
+    font-family: 'Lucida Console', monospace;
+    font-style: normal;
+    color: navy;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 30%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: purple;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

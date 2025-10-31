@@ -1,0 +1,35 @@
+/* External CSS for ordered list (ol) */
+ol {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    color: teal;
+    list-style-type: upper-roman;
+}
+
+ol li:nth-child(1) {
+    font-style: italic;
+    color: cyan;
+}
+
+ol li:nth-child(2) {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+/* External CSS for unordered list (ul) */
+ul {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 15px;
+    color: orchid;
+    list-style-type: square;
+}
+
+ul li:nth-child(1) {
+    font-style: oblique;
+    color: magenta;
+}
+
+ul li:nth-child(2) {
+    text-decoration: underline;
+    color: navy;
+}

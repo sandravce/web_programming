@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merged CSS Example</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    <!-- Internal CSS -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 30%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: purple;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            color: darkblue;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        p {
+            color: #444;
+            font-family: 'Lucida Console', monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS for main heading -->
+    <h1 style="color:#FF69B4; font-family:Papyrus, fantasy; font-size:40px; text-align:center;">BLACKPINK</h1>
+
+    <!-- Internal CSS for paragraph -->
+    <p>
+        BLACKPINK is a South Korean girl group formed by YG Entertainment in 2016, consisting of members Jisoo, Jennie, Rosé, and Lisa.
+    </p>
+
+    <!-- Internal CSS for subheading -->
+    <h2>Eldest Members</h2>
+
+    <!-- External CSS for ordered list -->
+    <ol>
+        <li>Jisoo</li>
+        <li>Jennie</li>
+    </ol>
+
+    <!-- Inline CSS for subheading -->
+    <h3 style="color:green; font-family:'Brush Script MT', cursive;">Youngest Members</h3>
+
+    <ul>
+        <li>Rosé</li>
+        <li>Lisa</li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>RegNo</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td>Sandra</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>4343</td>
+                <td>Vismaya</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>3663</td>
+                <td>Chinju</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>1122</td>
+                <td>Ria</td>
+                <td>78</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
