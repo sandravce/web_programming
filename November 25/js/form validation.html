@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<script>
+function validate() {
+ var passwd = document.getElementById("pwd").value;
+ if (passwd == "") {
+ alert("Enter a Password");
+ return false;
+ }
+ else if (passwd.length < 8) {
+ alert("Password requires at least 8 characters");
+ return false;
+ }
+ else {
+ alert("Thank You for Registration");
+  return true;
+ }
+}
+</script>
+</head>
+<body>
+<h2>Form Validation</h2>
+<form style="width:900px; position:relative; left:100px;" onsubmit="return validate()">
+<label>Password:</label>
+<input type="password" id="pwd"><br><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>

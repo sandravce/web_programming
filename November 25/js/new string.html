@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>JavaScript String and Math Functions</title>
+</head>
+<body>
+<h1>JavaScript Predefined String and Math Functions</h1>
+<h2>1. String Object Functions</h2>
+<font size="4">The <b>String</b> object in JavaScript provides many predefined methods to manipulate and analyze text.<br>
+Common String Methods<br> 
+let text = "Welcome to JavaScript Programming";</font>
+<script>
+var text = "Welcome to JavaScript Programming";
+document.writeln("1. length: " + text.length + "<br>");
+document.writeln("2. toUpperCase(): " + text.toUpperCase() + "<br>" );
+document.writeln("3. toLowerCase(): " + text.toLowerCase() + "<br>" );
+document.writeln("4. charAt(3): " + text.charAt(3) + "<br>");
+ document.writeln("5. indexOf('Java'): " + text.indexOf("Java") + "<br>");
+document.writeln("6. replace('JavaScript', 'html'): " + text.replace("JavaScript", "html") + "<br>");
+document.writeln("7. slice(0,4): " + text.slice(0,4) + "<br>");
+document.writeln("8. substring(10,21): " + text.substring(10,21) + "<br>");
+document.writeln("9. split(' '): " + text.split(" ") + "<br>");
+</script>
+<h2>2. Math Object Functions</h2>
+<font size="3">The <b>Math</b> object provides mathematical constants and functions for calculations.<br>
+Common Math methods<br>
+let num = 7.56</font>
+<script>
+var num = 7.56;
+document.writeln("1. Math.round(7.56): " + Math.round(num) + "<br>");
+document.writeln("2. Math.floor(7.56): " + Math.floor(num) + "<br>" );
+document.writeln("3. Math.ceil(7.56): " + Math.ceil(num) + "<br>");
+document.writeln("4. Math.sqrt(64): " + Math.sqrt(64) + "<br>");
+document.writeln("5. Math.pow(3,4): " + Math.pow(3,4) + "<br>" );
+document.write("6. Math.max(5, 9, 2): " + Math.max(5,9,2) + "<br>");
+document.write("7. Math.min(5, 9, 2): " + Math.min(5,9,2) + "<br>" );
+</script>
+</body>
+</html>
