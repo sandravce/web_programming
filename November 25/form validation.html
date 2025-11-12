@@ -1,31 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Form Validation</title>
+<title>Welcome To Registration Form</title>
+<style>
+
+label {
+  width: 140px;
+  font-size: 18px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input {
+  padding: 8px 10px;
+  width: 280px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid blue;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: teal; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red; 
+}
+
+</style>
 <script>
-function validate() {
- var passwd = document.getElementById("pwd").value;
- if (passwd == "") {
- alert("Enter a Password");
+function validate()
+{
+var name = document.getElementById("nam").value;
+var passwd = document.getElementById("pwd").value;
+var cfmpwd = document.getElementById("cfmpwd").value;
+var phone = document.getElementById("pno").value;
+if(name == "")
+{
+alert('Name cannot be blank');
+return false;
+}
+else if(!isNaN(name)) // Nan = NOT A NUMBER
+{
+alert('Name required alphabets!');
+return false;
+}
+else if(passwd == "")
+{ alert('Enter a Password');
  return false;
- }
- else if (passwd.length < 8) {
- alert("Password requires at least 8 characters");
+}
+
+else if(passwd.length <8)
+{ alert('Password required atleast 8 characters');
  return false;
- }
- else {
- alert("Thank You for Registration");
-  return true;
- }
+}
+else if(cfmpwd == "")
+{ alert('Password must be confirmed');
+  return false;
+}
+else if(passwd != cfmpwd)
+{ alert('Passwords do not match');
+  return false;
+}
+else if(phone == "")
+{
+alert('Enter your phone number!');
+return false;
+}
+else if(isNaN(phone))
+{
+ alert('Invalid Phone Number');
+ return false;
+}
+else if(phone.length !=10)
+{
+alert('Not a Valid Phone Number (need 10 digits)');
+return false;
+}
+else
+{
+alert('Thank You for Registration');
+return true;
+}
 }
 </script>
 </head>
 <body>
 <h2>Form Validation</h2>
-<form style="width:900px; position:relative; left:100px;" onsubmit="return validate()">
-<label>Password:</label>
-<input type="password" id="pwd"><br><br>
+<form style="width:900px; position:relative; left:500;" onsubmit="return validate()"/>
+
+<label>Name</label> 
+<input type="text" placeholder="Name" id="nam"><br><br>
+
+<label>Password</label> 
+<input type="password" placeholder="Password" id = "pwd"><br></br>
+
+<label>Confirm Password</label> 
+<input type="password" placeholder="Confirm password" id="cfmpwd"><br><br>
+
+<label>Phone Number</label> 
+<input type="text" placeholder="Phone Number" id="pno"><br><br>
+
 <button type="submit">Submit</button>
+<button type="reset">Cancel</button>
 </form>
 </body>
 </html>
