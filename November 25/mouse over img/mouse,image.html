@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Changing image and text</title>
+<style>
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  margin-top: 50px;
+}
+
+img {
+  width: 250px;
+  height: 250px; 
+  border: 3px solid purple;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+}
+
+#p1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: darkblue;
+  margin-top: 15px;
+}
+</style>
+
+<script>
+function one() {
+  document.getElementById("img").src = "coffee.jpg";
+  document.getElementById("p1").innerHTML = "onmouseover";
+  document.getElementById("p1").style.color = "maroon";
+}
+
+function two() {
+  document.getElementById("img").src = "tea.jpg";
+  document.getElementById("p1").innerHTML = "onmouseout";
+  document.getElementById("p1").style.color = "blue";
+}
+</script>
+</head>
+
+<body>
+<h2>Drinks !!</h2>
+<img src="lime.jpg" id="img" onmouseover="one()" onmouseout="two()">
+<p id="p1">HOVER MOUSE OVER IMAGE</p>
+</body>
+</html>
