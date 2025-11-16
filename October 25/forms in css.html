@@ -9,57 +9,82 @@
   <form class="registration-form">
     <h2>REGISTRATION FORM</h2>
 
-    <label for="name">Name:</label>
-    <input type="text" name="fn" id="name">
-
-    <label for="pass">Password:</label>
-    <input type="password" name="pass" id="pass">
-
-    <label for="mobile">Mobile:</label>
-    <input type="number" id="mobile" name="mobile" maxlength="10">
-
-    <label for="address">Address:</label>
-    <textarea name="address" id="address"></textarea>
-
-    <label for="date">DOB:</label>
-    <input type="date" name="date" id="date">
-
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email">
-
-    <label>Gender:</label>
-    <div class="gender-options">
-      <input type="radio" id="male" name="gender" value="Male" checked>
-      <label for="male">Male</label>
-
-      <input type="radio" id="female" name="gender" value="Female">
-      <label for="female">Female</label>
-
-      <input type="radio" id="others" name="gender" value="Others">
-      <label for="others">Others</label>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" name="fn" id="name">
     </div>
 
-    <label for="nationality">Nationality:</label>
-    <select id="nationality" name="nationality">
-      <option value="India">India</option>
-      <option value="Russia">Russia</option>
-      <option value="Korea">Korea</option>
-    </select>
+    <div class="form-group">
+      <label for="pass">Password:</label>
+      <input type="password" name="pass" id="pass">
+    </div>
 
-    <fieldset>
-      <legend>Languages Known:</legend>
+    <div class="form-group">
+      <label for="mobile">Mobile:</label>
+      <input type="number" id="mobile" name="mobile" maxlength="10">
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea name="address" id="address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="date">DOB:</label>
+      <input type="date" name="date" id="date">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="others" name="gender" value="Others">
+        <label for="others">Others</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="nationality">Nationality:</label>
+      <select id="nationality" name="nationality">
+	    <option value="America">America</option>
+        <option value="India">India</option>
+        <option value="Russia">Russia</option>
+        <option value="Korea">Korea</option>
+      </select>
+    </div>
+
+<fieldset>
+  <legend>Languages Known:</legend>
+  <div class="checkbox-group-vertical">
+    <div>
       <input type="checkbox" id="lang1" name="lang" value="english">
-      <label for="lang1">English</label><br>
-
+      <label for="lang1">English</label>
+    </div>
+    <div>
       <input type="checkbox" id="lang2" name="hindi" value="hindi">
-      <label for="lang2">Hindi</label><br>
-
+      <label for="lang2">Hindi</label>
+    </div>
+    <div>
       <input type="checkbox" id="lang4" name="russian" value="russian">
-      <label for="lang4">Russian</label><br>
-
+      <label for="lang4">Russian</label>
+    </div>
+    <div>
       <input type="checkbox" id="lang3" name="korean" value="korean">
-      <label for="lang3">Korean</label><br>
-    </fieldset>
+      <label for="lang3">Korean</label>
+    </div>
+  </div>
+</fieldset>
+
 
     <div class="form-buttons">
       <input type="submit" value="Submit">
