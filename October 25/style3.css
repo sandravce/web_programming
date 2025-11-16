@@ -2,8 +2,6 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f7f8;
-  margin: 0;
-  padding: 0;
 }
 
 /* Form container */
@@ -48,7 +46,6 @@ body {
   padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  outline: none;
   box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
@@ -115,7 +112,6 @@ body {
   width: 100px;
   padding: 10px;
   margin: 0 10px;
-  border: none;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
@@ -127,15 +123,7 @@ body {
   color: white;
 }
 
-.form-buttons input[type="submit"]:hover {
-  background: #45a049;
-}
-
 .form-buttons input[type="reset"] {
   background: #f44336;
   color: white;
-}
-
-.form-buttons input[type="reset"]:hover {
-  background: #d32f2f;
 }
