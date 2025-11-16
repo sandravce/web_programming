@@ -1,32 +1,42 @@
+/* General page styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  background: #f4f7f8;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 
+/* Form container */
 .registration-form {
-  max-width: 500px;
-  margin: auto;
-  background-color: #ffffff;
-  padding: 30px;
+  width: 450px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px 30px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Heading */
 .registration-form h2 {
   text-align: center;
-  margin-bottom: 20px;
   color: #333;
+  margin-bottom: 20px;
 }
 
-.registration-form label {
-  display: block;
-  margin-top: 15px;
+/* Form groups aligned with grid */
+.form-group {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
   font-weight: bold;
-  color: #555;
+  color: #444;
 }
 
+/* Inputs, textarea, select */
 .registration-form input[type="text"],
 .registration-form input[type="password"],
 .registration-form input[type="number"],
@@ -35,51 +45,97 @@ body {
 .registration-form textarea,
 .registration-form select {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  outline: none;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
+.registration-form input:focus,
+.registration-form textarea:focus,
+.registration-form select:focus {
+  border-color: #4CAF50;
+}
+
+/* Textarea */
+.registration-form textarea {
+  height: 70px;
+  resize: none;
+}
+
+/* Gender inline */
 .gender-options {
   display: flex;
-  gap: 10px;
-  margin-top: 5px;
+  gap: 15px;
 }
 
-fieldset {
-  margin-top: 20px;
-  padding: 10px;
+.gender-options label {
+  font-weight: normal;
+}
+
+/* Fieldset styling */
+.registration-form fieldset {
   border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+  min-height: 100px;   /* ensures the box has some height */
+  background: #fafafa; /* optional: light background for clarity */
 }
 
-legend {
+.registration-form legend {
   font-weight: bold;
-  color: #444;
+  color: #333;
+  padding: 0 8px;
 }
 
-.form-buttons {
+.checkbox-group-vertical {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-group-vertical div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+.form-buttons {
+  text-align: center;
   margin-top: 20px;
 }
 
 .form-buttons input[type="submit"],
 .form-buttons input[type="reset"] {
-  padding: 10px 20px;
+  width: 100px;
+  padding: 10px;
+  margin: 0 10px;
   border: none;
-  background-color: #0077cc;
-  color: white;
   border-radius: 4px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-buttons input[type="submit"] {
+  background: #4CAF50;
+  color: white;
+}
+
+.form-buttons input[type="submit"]:hover {
+  background: #45a049;
 }
 
 .form-buttons input[type="reset"] {
-  background-color: #999;
+  background: #f44336;
+  color: white;
 }
 
-.form-buttons input:hover {
-  opacity: 0.9;
+.form-buttons input[type="reset"]:hover {
+  background: #d32f2f;
 }
