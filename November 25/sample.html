@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Change Background Color</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+        font-family: "Poppins", sans-serif;
+        transition: background-color 0.6s ease;
+    }
+
+    .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 40px 60px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        font-size: 26px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    button {
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        background: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+        background: #357abd;
+        transform: translateY(-3px);
+    }
+
+    button:active {
+        transform: translateY(1px);
+        box-shadow: none;
+    }
+</style>
+
+<script>
+function changeColor() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    let color = "rgb(" + r + "," + g + "," + b + ")";
+    document.body.style.background = color;
+}
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Click the button to change the background color</h2>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+</body>
+</html>
